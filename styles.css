@@ -1,0 +1,13 @@
+ul.nav li {
+    display: inline;
+    /* Display list items in a horizontal line */
+    margin-right: 20px;
+    /* Add some spacing between items */
+}
+
+ul.nav li a {
+    /* horizontal navigation design */
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
