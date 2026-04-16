@@ -15,14 +15,90 @@ body {
     justify-content: center;
     padding: 20px;
     max-width: 1000px;
+
+}
+
+HEAD .job1,
+.job2 {
+    background: #ffffff;
+    border: 1px solid white;
 }
 
 .job1,
 .job2 {
-    background: #ffffff;
+    background: #fff5d7;
     border: 1px solid white;
     border-radius: 8px;
     padding: 20px;
     flex: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.job1:hover,
+.job2:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-listing h4,
+.job-listing h3 {
+    color: #2f182b
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #fff5d7;
+}
+
+.nav img {
+    margin-right: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #5a3e2b;
+    /* warm dark brown */
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover {
+    color: #d97706;
+}
+
+.nav a:active {
+    color: #b45309;
+}
+
+header hr {
+    border: none;
+    height: 3px;
+    background-color: #e6d3a3;
+    margin-top: 5px;
+}
+
+.nav a {
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #d97706;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }
