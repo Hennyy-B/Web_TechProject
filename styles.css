@@ -43,12 +43,17 @@ body {
     flex-wrap: wrap;
 }
 
-.job-listing h3, .job-summary-card h3 {
+h3 {
     color: #d97706;
 }
- 
-.job-listing h4, .job-listing p {
+
+h4 {
     color: #5a3e2b;
+}
+
+p {
+    color: #5a3e2b;
+    line-height: 1.6;
 }
 
 
@@ -65,15 +70,8 @@ body {
     max-width: 420px;
 }
 
-.job-summary-card h3,
-.application-tips h3 {
-    margin-top: 0;
-    color: #5a3e2b;
-}
-
 .job-count {
     font-size: 18px;
-    color: #d97706;
     margin-bottom: 16px;
     font-weight: 700;
 }
@@ -143,4 +141,37 @@ header hr {
 
 .nav a:hover::after {
     width: 100%;
+}
+
+footer {
+    background-color: #fff5d7;
+    border-top: 3px solid #e6d3a3;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #5a3e2b;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #d97706;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
 }
