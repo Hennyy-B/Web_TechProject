@@ -18,31 +18,69 @@ body {
 
 }
 
-HEAD .job1,
-.job2 {
-    background: #ffffff;
-    border: 1px solid white;
-}
-
-.job1,
-.job2 {
+.card {
     background: #fff5d7;
-    border: 1px solid white;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 20px;
-    flex: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.job1:hover,
-.job2:hover {
+.card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.job-listing h4,
-.job-listing h3 {
-    color: #2f182b
+.job1, .job2, .job-summary-card {
+    width: 100%;
+}
+
+.job-listing {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.job-listing h3, .job-summary-card h3 {
+    color: #d97706;
+}
+ 
+.job-listing h4, .job-listing p {
+    color: #5a3e2b;
+}
+
+
+.job-summary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 20px 0;
+}
+
+.job-summary-card,
+.application-tips {
+    max-width: 420px;
+}
+
+.job-summary-card h3,
+.application-tips h3 {
+    margin-top: 0;
+    color: #5a3e2b;
+}
+
+.job-count {
+    font-size: 18px;
+    color: #d97706;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.application-tips ul {
+    margin: 0;
+    padding-left: 18px;
 }
 
 .nav {
@@ -50,6 +88,9 @@ HEAD .job1,
     align-items: center;
     gap: 30px;
     list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #fff5d7;
     padding: 10px 20px;
     margin: 0;
     background-color: #fff5d7;
