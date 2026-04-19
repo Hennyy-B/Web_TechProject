@@ -59,7 +59,7 @@ p {
     display: inline-block; /* allow padding and width while staying in line */
     padding: 8px; /* clickable space inside the button */
     background-color: #ffad50;
-    color: #ffffff;
+    color: #000000;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 700; /* bold button label for emphasis */
@@ -68,6 +68,7 @@ p {
 
 .apply-btn:hover {
     background-color: #b45309;
+    color: #ffffff;
 }
 .nav {
     display: flex; /* use flex layout for the navigation row */
