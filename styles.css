@@ -9,40 +9,6 @@ body {
     background-color: #fff5d7;
 }
 
-.job-listing {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    max-width: 1000px;
-
-}
-
-.card {
-    background: #fff5d7;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.job1, .job2, .job-summary-card {
-    width: 100%;
-}
-
-.job-listing {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    max-width: 1000px;
-    flex-wrap: wrap;
-}
-
 h3 {
     color: #d97706;
 }
@@ -56,37 +22,59 @@ p {
     line-height: 1.6;
 }
 
+/* Reusable card styling for panel-like containers */
+.card {
+    background: #fff5d7;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
 
-.job-summary {
-    display: flex;
-    justify-content: center;
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.job1, .job2 {
+    width: 100%;
+}
+
+
+.job-listing {
+    display: flex; /* use flexbox so cards can sit next to each other */
     gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px 20px 0;
+    justify-content: left ; /* align children toward the left edge */
+    padding: 20px; /* space inside the container */
 }
 
-.job-summary-card,
-.application-tips {
-    max-width: 420px;
-}
 
 .job-count {
     font-size: 18px;
     margin-bottom: 16px;
-    font-weight: 700;
+    font-weight: 700; /* make the job count text bold */
 }
 
-.application-tips ul {
-    margin: 0;
-    padding-left: 18px;
+/* Primary action button styling for apply links */
+.apply-btn {
+    display: inline-block; /* allow padding and width while staying in line */
+    padding: 8px; /* clickable space inside the button */
+    background-color: #ffad50;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700; /* bold button label for emphasis */
+    transition: background-color 0.2s ease, transform 0.2s ease; /*  hover animation */
 }
 
+.apply-btn:hover {
+    background-color: #b45309;
+}
 .nav {
-    display: flex;
+    display: flex; /* use flex layout for the navigation row */
     align-items: center;
     gap: 30px;
-    list-style: none;
-    padding: 10px 20px;
+    list-style: none; /* remove default list bullets */
+    padding: 10px 20px; /* space inside the navigation bar */
     margin: 0;
     background-color: #fff5d7;
     padding: 10px 20px;
@@ -143,6 +131,7 @@ header hr {
     width: 100%;
 }
 
+/* Footer design and layout */
 footer {
     background-color: #fff5d7;
     border-top: 3px solid #e6d3a3;
@@ -150,10 +139,10 @@ footer {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* arrange footer links and contact info in a row */
+    justify-content: space-between; /* push content to opposite sides */
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px; /* space inside the footer container */
     max-width: 1200px;
     margin: 0 auto;
 }
