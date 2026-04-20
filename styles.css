@@ -78,6 +78,7 @@ p {
     color: #ffffff;
 }
 
+/* Naigation layout */
 .nav {
     display: flex;
     /* use flex layout for the navigation row */
@@ -98,6 +99,7 @@ p {
     margin-right: 40px;
 }
 
+/* naigation link */
 .nav a {
     text-decoration: none;
     font-family: Arial, sans-serif;
@@ -115,7 +117,7 @@ p {
 .nav a:active {
     color: #b45309;
 }
-
+/* header seperation line */
 header hr {
     border: none;
     height: 3px;
@@ -127,7 +129,7 @@ header hr {
 .nav a {
     position: relative;
 }
-
+/* the links dont change after being used */
 .nav a::after {
     content: "";
     position: absolute;
@@ -179,7 +181,7 @@ footer {
     display: flex;
     gap: 20px;
 }
-
+/* index page search */
 .search_form {
     margin: 20px;
 }
@@ -190,7 +192,7 @@ footer {
     border-radius: 5px;
     border: 1px solid #f0db9d;
 }
-
+/* search button */
 .search_form button {
     padding: 8px 12px;
     border: 1px;
@@ -199,15 +201,13 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/* index page layout */
 .home_container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
-
-
-
+/* company slogan, description and acknowlangement of country section */
 .intro {
     background: #fff5d7;
     padding: 20px;
@@ -225,7 +225,7 @@ footer {
     line-height: 1.6;
     color: #444;
 }
-
+/* index page product table */
 .product_section {
     margin-top: 20px;
 }
@@ -247,7 +247,7 @@ footer {
     padding: 10px;
     text-align: left;
 }
-
+/* search and button index page */
 .search_section {
     margin-top: 30px;
     text-align: center;
@@ -302,7 +302,7 @@ main li {
     margin-bottom: 5px;
 }
 
-/* Description list (team section) */
+/* Description list team section */
 main dl {
     margin-bottom: 25px;
 }
@@ -318,7 +318,7 @@ main dd {
     margin-bottom: 5px;
 }
 
-/* Image + caption */
+/* Image and caption */
 figure {
     margin: 30px 0;
     text-align: center;
@@ -334,8 +334,7 @@ figcaption {
     font-size: 14px;
     color: #7a5a3a;
 }
-
-/* Table styling */
+/* table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -343,7 +342,6 @@ table {
     font-size: 14px;
 }
 
-/* Table header */
 th {
     background-color: #f3d9a4;
     color: #3b2a1a;
@@ -351,7 +349,6 @@ th {
     text-align: left;
 }
 
-/* Table cells */
 td {
     padding: 10px;
     border-top: 1px solid #e6d3a3;
@@ -362,18 +359,16 @@ tr:nth-child(even) {
     background-color: #fff0c2;
 }
 
-/* Hover effect */
 tr:hover {
     background-color: #ffe4a3;
 }
 
-/* Layout spacing */
 main {
     padding: 30px 40px;
 }
 
 /* grid layout for about page*/
-.grid_layout{
+.grid_layout {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(80px, auto);
@@ -384,25 +379,25 @@ main {
     background-color: #fff5d7;
 }
 
-/* 1st card (top-left) */
+/* 1st card top-left */
 .card-1 {
     grid-column: 1 / 2;
     grid-row: span 1;
 }
 
-/* 2nd card (top-right) */
+/* 2nd card top-right */
 .card-2 {
     grid-column: 2 / 13;
     grid-row: span 3;
 }
 
-/* 3rd card (bottom-left under card 1) */
+/* 3rd card bottom-left under card 1 */
 .card-3 {
     grid-column: 1 / 2;
     grid-row: span 2;
 }
 
-/* 4th card (table spans full width at bottom) */
+/* 4th card table spans full width at bottom */
 .card-4 {
     grid-column: 1 / 13;
 }
@@ -451,7 +446,8 @@ main {
         gap: 15px;
     }
 
-    .job1, .job2 {
+    .job1,
+    .job2 {
         width: 100%;
     }
 
@@ -480,7 +476,10 @@ main {
         padding: 10px;
     }
 
-    .card-1, .card-2, .card-3, .card-4 {
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
         grid-column: 1;
     }
 
@@ -560,7 +559,8 @@ main {
         gap: 20px;
     }
 
-    .job1, .job2 {
+    .job1,
+    .job2 {
         width: 48%;
     }
 
@@ -633,7 +633,8 @@ main {
         gap: 20px;
     }
 
-    .job1, .job2 {
+    .job1,
+    .job2 {
         width: 48%;
     }
 
@@ -705,7 +706,8 @@ main {
         gap: 30px;
     }
 
-    .job1, .job2 {
+    .job1,
+    .job2 {
         width: 48%;
     }
 
@@ -741,4 +743,4 @@ main {
     }
 }
 
-/* Device Breakpoints found from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */   
+/* Device Breakpoints found from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
