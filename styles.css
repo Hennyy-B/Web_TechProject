@@ -208,17 +208,7 @@ footer {
     padding: 20px;
 }
 
-.company_name {
-    text-align: center;
-    padding: 30px 10px;
-}
 
-.company_name h1 {
-    font-size: 48px;
-    margin: 0;
-    color: #333;
-    letter-spacing: 1px;
-}
 
 .intro {
     background: #fff5d7;
