@@ -59,7 +59,7 @@ Commercalify is a modern, responsive web platform designed to showcase our compa
 ## Contact
 
 For inquiries, contact: **Info@Commercalify.com**
-<sub>Ai Generated this Readme File based on our Site</sub>
 ---
 
 _Last Updated: April 2026_
+_Ai Generated this Readme File based on our Site_
