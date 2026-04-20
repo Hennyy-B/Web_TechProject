@@ -1,4 +1,4 @@
-# Commercalify - Job Portal & Career Platform
+# Commercalify 
 
 ## Overview
 
@@ -62,4 +62,4 @@ For inquiries, contact: **Info@Commercalify.com**
 ---
 
 _Last Updated: April 2026_
-_Ai Generated this Readme File based on our Site_
+_. Ai Generated this Readme File based on our Site_
