@@ -426,7 +426,7 @@ main {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .nav {
-        flex-direction: column;
+        flex-direction: column;  /*swaps axis direction to vertical */
         gap: 10px;
         padding: 10px;
     }
@@ -441,7 +441,7 @@ main {
     }
 
     .job-listing {
-        flex-direction: column;
+        flex-direction: column; 
         padding: 10px;
         gap: 15px;
     }
@@ -471,7 +471,7 @@ main {
     }
 
     .grid_layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /*how many coloumns in the grid */
         gap: 10px;
         padding: 10px;
     }
@@ -514,8 +514,7 @@ main {
     }
 
     .job-summary {
-        flex-direction: row;
-    }
+        flex-direction: row; /*swaps axis direction to horizontal */    }
 
     .job-summary-card,
     .application-tips-card {
@@ -585,7 +584,8 @@ main {
 
     .card-2 {
         grid-column: 2;
-        grid-row: span 3;
+        grid-row: span 3; /* grid is 3 rows of vertical space */
+
     }
 
     .card-3 {
@@ -593,7 +593,7 @@ main {
     }
 
     .card-4 {
-        grid-column: 1 / 3;
+        grid-column: 1 / 3; /* coloumn 1 to 3 (width) */
     }
 
     main {
@@ -830,5 +830,4 @@ main {
 }
 
 
-/* Device Breakpoints found from https://www.w3schools.com/css/css_rwd_mediaqueries.asp, claude assisted with formatting sizes*/  
 
