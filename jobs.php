@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Openings</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <style>
         .job-summary {
             display: flex;
@@ -21,17 +21,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- Horrizontal navigation to pages  -->
-        <ul class="nav">
-            <img src="Images/Compressed logo.png" alt="Commercialify Logo" height="100">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-        <hr>
-    </header>
+    <?php include './inc/header.inc' ?>
 
     <main>
         <div class="job-summary">
@@ -50,7 +40,7 @@
         <div class="job-listing">
             <section class="job1 card">
                 <h4>Reference Number: <em>FW45W</em></h4>
-                <h3>E-Commerce Manager</h3>  <!-- Job and Job Info found from https://indeed.com  -->
+                <h3>E-Commerce Manager</h3> <!-- Job and Job Info found from https://indeed.com  -->
 
                 <p>You will be responsible for overseeing on our Online Store operations, premarily focusing on: ways to
                     drive
@@ -116,16 +106,7 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <a href="mailto:Info@Commercalify.com">Info@Commercalify.com</a>
-            <div class="links">
-                <a href="https://webtechprojecthbnccl.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiYjcwY2U5ZWMyMDAzNDdmOThkMjVhM2UwYTcxODViZmEiLCJwIjoiaiJ9 "
-                    target="_blank">Jira</a>
-                <a href="https://github.com/Hennyy-B/Web_TechProject.git" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </footer>
+    <?php include './inc/footer.inc' ?>
 </body>
 
 </html>

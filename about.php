@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
 
     <style>
@@ -18,17 +18,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- Horrizontal navigation to pages  -->
-        <ul class="nav">
-            <img src="Images/Compressed logo.png" alt="Company Logo" height="100">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-        <hr>
-    </header>
+    <?php include './inc/header.inc' ?>
     <main class="grid_layout">
         <section class="card card-1">
             <h1>About Us</h1>
@@ -66,7 +56,7 @@
         <section class="card card-3">
             <figure>
 
-                <img src="Images/GroupPhoto (1).jpg" alt="Group Photo" width="400">
+                <img src="./styles/Images/GroupPhoto (1).jpg" alt="Group Photo" width="400">
                 <figcaption>Group Photo</figcaption>
             </figure>
         </section>
@@ -107,16 +97,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <a href="mailto:Info@Commercalify.com">Info@Commercalify.com</a>
-            <div class="links">
-                <a href="https://webtechprojecthbnccl.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiYjcwY2U5ZWMyMDAzNDdmOThkMjVhM2UwYTcxODViZmEiLCJwIjoiaiJ9 "
-                    target="_blank">Jira</a>
-                <a href="https://github.com/Hennyy-B/Web_TechProject.git" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </footer>
+    <?php include './inc/footer.inc' ?>
 </body>
 
 </html>
